@@ -26,3 +26,5 @@ Included here is a very simple code that will be uploaded to each Nano/LED Strip
 
 #define INIT_BRIGHTNESS   255
 
+# Recognition
+The first known implementation of this design was done by rudiroeller (Martin R) on Instagram. Follow him at https://www.instagram.com/rudiroeller. Therefore, this design is often known as "Rudi's Hyper Drive".
