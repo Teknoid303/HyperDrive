@@ -3,18 +3,22 @@
 Flite Test is doing a build video on the HyperDrive that Jesse Perkins and I built for their Whoop Course at Edgewater Airpark. This GitHub is in support of that video.
 
 # Electronics Build
-**Electronic Parts** - For EACH strand in your HyperDrive, you will need one of each of the items listed below. Jesse P and I used 5 in the gates we've created so far, including the one at Edgewater. You can increase it to 6 to supersize the effect. Or, you can reduce it, but be aware that the effect will loose some "wow" factor if you do. There is also an experimental way of reducing the number of NANOs in your design (see "Reduce Your NANO Load" below).
+**Electronic Parts** - For EACH strand in your HyperDrive, you will need one of each of the items listed below. Jesse P and I used 5 in the gates we've created so far, including the one at Edgewater. You can increase it to 6 to supersize the effect. Or, you can reduce it, but be aware that the effect will loose some "wow" factor if you do. With 5 strips, it used 2 1/2 5 meter rolls of LEDs. There is also an experimental way of reducing the number of NANOs in your design (see "Reduce Your NANO Load" below).
 - Arduino Nano
 - WS2812B LED Strips (length and quantity depends on the size of your gate)
 - Resistor (220-470 ohm) - Optional but suggested
 - Various Wire
 - Heatshrink Tubing to cover and protect the electronics and connections
 
+WS2812b Strips can be found here: https://www.amazon.com/ALITOVE-Addressable-Programmable-Waterproof-Raspberry/dp/B07FVR6W71
+**OR** if you have some time to wait, they can be found on https://www.aliexpress.com/ - Use the search "WS2812b 5v IP30 5m 60led/m" and you should find them for about $14 per 5m roll (about half the price of Amazon).
+
 The connections are fairly simple and can be repeated for as many LED strands you want in your gate.
 # ![Schematic](media/HyperDriveCircuit.jpg)
 
 ## IMPORTANT - Power Supply Selection
-You will need a 5v power supply for this gate. The type and rating of the power supply you select depends on the **TOTAL** number of LEDs that will be in your gate. As a rule of thumb, and only for this display pattern, you will need about 4W of power at 5v for every 120 LEDs you are running. The 8 foot gate at Flite Test used nearly 900 LEDs, which required a 30 watt power supply. Generally, I go double on my supplies because I know I will change the pattern at some point and push it further.
+You will need a 5v power supply for this gate. The type and rating of the power supply you select depends on the **TOTAL** number of LEDs that will be in your gate. As a rule of thumb, you will need about 18W of power at 5v for every meter of LEDs you are running, which is about 60 LEDs. The 8 foot gate at Flite Test used nearly 900 LEDs, which comes out to a 270 watt power supply. We settled on a lower 150W supply like this: https://www.amazon.com/SHNITPWR-Converter-Adapter-Transformer-WS2812B/dp/B07TZ2TRRB
+**BUT**, if you plan on doing crazy stuff with your gate like putting other patterns or expanding on the included programming, you may want to opt for the full 300W power supply like this one: https://www.amazon.com/Tanbaby-Universal-Regulated-Switching-Converter/dp/B017YEOAPA
 
 # Programming
 Included is a very simple code that will be uploaded to each Nano/LED Strip you have to create the feeling of "Hitting the HyperDrive" and "Flying Through a Starfield". It creates a "star" 7 LEDs long (**LEAD_LEDS**), that fade from the first to the last, traveling at speeds varying between **MIN_STAR_SPEED** and **MAX_STAR_SPEED** down the length of the strand. There can be multiple stars traveling on each strand, controlled by **STARS_PER_STRAND**, that will overtake others if they are traveling faster.
