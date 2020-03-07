@@ -53,5 +53,14 @@ My original version of this code was much larger and more complicated than this 
 For a time-limited project inside the shop at Flite Test, we decided to pull the code down to basics and go with sure-fire version that anyone could load up and run first time.
 I plan on expanding this code in a future branch/project that will contain all the features of the original code on a more expandable platform. 
 
-# Recognition
-The first known implementation of this design was done by [rudiroeller (Martin R) on Instagram](https://www.instagram.com/rudiroeller). Therefore, this design is often known as "Rudi's Hyper Drive".
+# Hardware Part List
+Just for completeness, the hardware portions of this design are as follows. On the bolts and screws, DO NOT use anything but pan-head screws. Counter-sink screws will crack the palruf material. Also, pre-drill all screw holes.
+- 3 pcs [Palruf 26 in x 8 ft CLEAR PVC Roof Panels](https://www.homedepot.com/p/Palruf-26-in-x-8-ft-Clear-PVC-Roof-Panel-100423/100038031). The wavy stuff works best in our opinion.
+- 3 pcs 2 in x 2 in x 8 ft [Furring Strip Lumber](https://www.homedepot.com/p/2-in-x-2-in-x-8-ft-Furring-Strip-Board-Lumber-75800593/304600525). You can use 2x4 wood also, but it's not structurally necessary.
+- 25 [1/4"-20 5/8" length Pan-Head Bolts](https://www.amazon.com/Stainless-Lengths-Available-Machine-Phillips/dp/B07B3YF1Y4), [Nylon Lock Nuts](https://www.amazon.com/Hillman-180147-Insert-20-Inch-100-Pack/dp/B000B4GU90), and [Matching Washers](https://www.amazon.com/Stainless-Outside-Diameter-Bolt-Dropper/dp/B07KQ198NP) from Amazon or find them at Home Depot
+- 12-18 [#8 Pan Head Wood Screws 3/4"](https://www.homedepot.com/p/SPAX-8-x-3-4-in-Philips-Square-Drive-Pan-Head-Full-Thread-Zinc-Coated-Multi-Material-Screw-35-per-Box-4111010400201/202040992)
+- [Double-Sided 10mm Tape](https://www.amazon.com/Double-Sided-Tape-Waterproof-Decorations/dp/B07TJFGXT6) because the stuff that comes with the LEDs can't be trusted.
+
+# Recognition/License
+The concept of this design was created by [rudiroeller (Martin R) on Instagram](https://www.instagram.com/rudiroeller). Therefore, this is often known as "Rudi's HyperDrive". I took the concept from his Instagram video and created a design using parts from Home Depot and additional electronics.
+This is a FULLY OPEN SOURCE project, which means use it as you will. I make no claim to the code or the design.
